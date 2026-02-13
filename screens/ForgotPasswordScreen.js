@@ -1,20 +1,17 @@
 import { View, Text, Button, StyleSheet, TextInput } from 'react-native';
 
-export default function RegisterScreen({ navigation }) {
+export default function ForgotPasswordScreen({ navigation }) {
   return (
     <View>
-      <Text style={styles.titulo}>Cadastro</Text>
+      <Text style={styles.titulo}>Esqueceu a senha</Text>
 
-      <Text style={styles.texto}>Nome:</Text>
-      <TextInput style={styles.input}/>      
+   
       <Text style={styles.texto}>Email:</Text>
-      <TextInput style={styles.input}/>
-      <Text style={styles.texto}>Senha:</Text>
       <TextInput style={styles.input}/>
 
       <View style={styles.botoes}>
         <Button
-          title="Cadastrar"
+          title="Enviar"
           onPress={() => showAlert()}
           color={"green"}
         />
@@ -50,7 +47,8 @@ const styles = StyleSheet.create({
   botoes: {
     display: "flex",
     gap: 20,
-    padding: 30
+    padding: 30,
+    marginTop: 60
   },
 });
 

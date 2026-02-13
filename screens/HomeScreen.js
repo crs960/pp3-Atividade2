@@ -28,12 +28,12 @@ export default function HomeScreen({ navigation }) {
           />
           <Button
             title="Cadastrar"
-            onPress={() => navigation.navigate('Details')}
+            onPress={() => navigation.navigate('Register')}
             color={"blue"}
           />
         </View>
         <Text 
-        onPress={() => showAlert()}
+        onPress={() => navigation.navigate('ForgotPassword')}
         style={styles.textoClicavel}>
           Esqueci minha senha
         </Text>
@@ -44,10 +44,6 @@ export default function HomeScreen({ navigation }) {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-  },
   img: {
     maxHeight: 200,
     flex: 1,
